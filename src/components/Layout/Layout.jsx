@@ -1,10 +1,10 @@
-import { Suspense } from "react"
-import Header from "../Header/Header.jsx"
-import { Outlet } from "react-router-dom"
+import { Suspense } from "react";
+import  Header from "../Header/Header.jsx";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
     return (
-        <div>
+        <div className='container'>
             <Header />
             <Suspense>
                 <Outlet />
