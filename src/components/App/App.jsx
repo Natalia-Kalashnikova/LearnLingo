@@ -1,12 +1,12 @@
 import { lazy } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from '../Layout/Layout.jsx';
-import NotFoundPage from '../NotFound/NotFoundPage.jsx';
+import NotFoundPage from '../../pages/NotFoundPages/NotFoundPage.jsx';
 import { useAuth } from '../../hooks/auth.js';
 
-const HomePage = lazy(() => import('../HomePage/HomePage.jsx'));
-const TeachersPage = lazy(() => import('../TeachersPage/TeachersPage.jsx'));
-const FavoritesPage = lazy(() => import('../FavoritesPage/FavoritesPage.jsx'));
+const HomePage = lazy(() => import('../../pages/HomePage/HomePage.jsx'));
+const TeachersPage = lazy(() => import('../../pages/TeachersPage/TeachersPage.jsx'));
+const FavoritesPage = lazy(() => import('../../pages/FavoritesPage/FavoritesPage.jsx'));
 
 function App() {
   const location = useLocation();

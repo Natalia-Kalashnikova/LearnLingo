@@ -6,7 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from './redux/store.js';
 import App from './components/App/App.jsx';
 import './index.css';
-import './firebase.js';
+import '../src/services/firebase.js';
 import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
