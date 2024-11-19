@@ -3,7 +3,7 @@ import { useState } from 'react';
 import {
     loginValidationSchema,
     registerValidationSchema
-} from '../TeacherCard/signInSchemes.js';
+} from '../../validation/signInSchemes.js';
 import { ReactComponent as IconShowPass } from '../../images/icon/eye-off.svg';
 import { ReactComponent as IconHidePass } from '../../images/icon/eye.svg';
 import css from './Forms.module.css';

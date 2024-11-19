@@ -1,5 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { entryValidationSchema } from '../../components/TeacherCard/signInSchemes.js';
+import { entryValidationSchema } from '../../validation/signInSchemes.js';
 import { showSuccessToast } from '../../components/ErrorMessages/errorMessages.js';
 import css from './Forms.module.css';
 

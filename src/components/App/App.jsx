@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import Layout from '../Layout/Layout.jsx';
+import Layout from '../../components/Layout/Layout.jsx';
 import NotFoundPage from '../../pages/NotFoundPages/NotFoundPage.jsx';
 import { useAuth } from '../../hooks/auth.js';
 
