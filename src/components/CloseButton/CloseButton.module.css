@@ -1,0 +1,18 @@
+.btnCross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  border: 0;
+  background-color: transparent;
+}
+
+.btnCross:hover,
+.btnCross:focus {
+  transform: scale(1.2);
+}

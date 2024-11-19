@@ -1,0 +1,63 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: rgba(18, 20, 23, 0.5);
+}
+
+.backdrop:hover {
+  cursor: pointer;
+}
+
+.popup {
+  position: relative;
+  left: 50%;
+  top: 50%;
+
+  width: 90%;
+  max-width: 566px;
+  max-height: 90%;
+  padding: 64px;
+
+  background-color: var(--background-color);
+  border-radius: 30px;
+
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.popup:hover {
+  cursor: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    padding: calc(16px + (64 - 16) * ((100vw - 320px) / (768 - 320)));
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (768 - 320)));
+  }
+  .popup h2 {
+    font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (768 - 320)));
+  }
+  .popup p:last-child {
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+    color: green;
+  }
+}
