@@ -4,9 +4,8 @@ import TeacherCard from '../../components/TeacherCard/TeacherCard.jsx';
 import NoTeachersFound from '../../components/NoTeachersFound/NoTeachersFound.jsx';
 import css from './TeachersList.module.css';
 
-const TeachersList = ({ filtered, lvl }) => {
+const TeachersList = () => {
     const [teachersPerPage, setTeachersPerPage] = useState(4);
-    const [favoritesPerPage, setFavoritesPerPage] = useState(4);
     const [teachers, setTeachers] = useState([]);
 
     useEffect(() => {
@@ -21,43 +20,24 @@ const TeachersList = ({ filtered, lvl }) => {
         setTeachersPerPage((prev) => prev + 4);
     };
 
-    const favoritesShowMore = () => {
-        setFavoritesPerPage((prev) => prev + 4);
-    };
-
     return (
         <>
-            {filtered && filtered.length === 0 ? (
+            {teachers.length === 0 ? (
                 <NoTeachersFound />
             ) : (
                 <ul className={css.cardsList}>
-                    {filtered && filtered.length > 0
-                        ? filtered.slice(0, favoritesPerPage).map((teach, index) => (
-                            <li className={css.cardsItem} key={index}>
-                                <TeacherCard card={teach} lvl={lvl} selectedLevel={lvl} />{' '}
-                            </li>
-                        ))
-                        : teachers.length > 0 && teachers.map((teach, index) => (
-                            <li className={css.cardsItem} key={index}>
-                                <TeacherCard card={teach} lvl={lvl} selectedLevel={lvl} />{' '}
-                            </li>
-                        ))}
+                    {teachers.map((teach, index) => (
+                        <li className={css.cardsItem} key={index}>
+                            <TeacherCard card={teach} />
+                        </li>
+                    ))}
                 </ul>
             )}
-            {teachers.length < 30 && !filtered && (
+            {teachers.length > 0 && teachers.length < 30 && (
                 <button
                     className={css.cardsLoadMoreBtn}
                     type="button"
                     onClick={handleShowMore}
-                >
-                    Show more
-                </button>
-            )}
-            {filtered && filtered.length > favoritesPerPage && (
-                <button
-                    className={css.cardsLoadMoreBtn}
-                    type="button"
-                    onClick={favoritesShowMore}
                 >
                     Show more
                 </button>

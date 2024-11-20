@@ -1,0 +1,109 @@
+.burgerMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 100%;
+
+  background: var(--background-color);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.burgerMenu.show {
+  transform: translateX(0);
+}
+
+.burgerHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.closeButton {
+  font-size: 1.5rem;
+
+  background: none;
+  color: var(--primary-text-color);
+  border: none;
+
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 20px;
+}
+
+.burgerLink {
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 1.2rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.burgerLink:hover,
+.burgerLink:focus {
+  color: var(--accent-color);
+}
+
+.burgerLink.active {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.authButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.burgerBtn {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.25;
+  min-width: 93px;
+  margin-bottom: 20px;
+}
+
+.burgerBtn:hover,
+.burgerBtn:focus {
+  color: var(--accent-color);
+}
+
+.burgerBtnIcon {
+  stroke: var(--accent-color);
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.burgerBtnReg {
+  padding: 14px 39px;
+  border-radius: 12px;
+  background-color: var(--primary-text-color);
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  min-width: 175px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .burgerButton {
+    display: none;
+  }
+}

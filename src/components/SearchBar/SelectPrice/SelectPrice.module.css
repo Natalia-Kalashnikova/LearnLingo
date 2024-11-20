@@ -1,0 +1,59 @@
+.searchContainer {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 24px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+.labelSelect {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #8a8a89;
+}
+
+.customSelect {
+  width: 144px;
+  height: 48px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  background: #fff;
+  color: #121417;
+  border: 1px solid var(--accent-light);
+  border-radius: 14px;
+
+  cursor: pointer;
+}
+
+.customSelectHover {
+  border: 1px solid var(--accent-color);
+}
+
+.customSelectFocus {
+  border: 1px solid var(--accent-color);
+}
+
+.customOption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  border: none;
+}
+
+.customOptionFocused {
+  color: var(--dark-color);
+}
+
+.customValueContainer {
+  border-radius: 14px;
+}

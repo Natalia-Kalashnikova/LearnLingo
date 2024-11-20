@@ -4,11 +4,11 @@ import {
     loginValidationSchema,
     registerValidationSchema
 } from '../../validation/signInSchemes.js';
-import { ReactComponent as IconShowPass } from '../../images/icon/eye-off.svg';
-import { ReactComponent as IconHidePass } from '../../images/icon/eye.svg';
+import IconShowPass from '../../images/icon/eye-off.svg';
+import IconHidePass from '../../images/icon/eye.svg';
 import css from './Forms.module.css';
 
-export const UniversalForm = (props) => {
+const UniversalForm = (props) => {
     const { title, text, inputs, handleUserSubmit, button } = props;
     const [showPassword, setShowPassword] = useState(false);
 
@@ -47,7 +47,11 @@ export const UniversalForm = (props) => {
                                                 type="button"
                                                 onClick={handleTogglePassword}
                                             >
-                                                {showPassword ? <IconHidePass /> : <IconShowPass />}
+                                                {showPassword ?
+                                                    <img src={IconHidePass} alt="Icon HidePass" />
+                                                    :
+                                                    <img src={IconShowPass} alt="Icon ShowPass" />
+                                                }
                                             </button>
                                             <Field
                                                 className={css.input}
@@ -92,3 +96,5 @@ export const UniversalForm = (props) => {
         </div>
     );
 };
+
+export default UniversalForm;

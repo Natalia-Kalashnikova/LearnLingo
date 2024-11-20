@@ -10,7 +10,7 @@ import '../src/services/firebase.js';
 import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>    
+  <StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <BrowserRouter basename="/LearnLingo">

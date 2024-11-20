@@ -1,0 +1,13 @@
+.main {
+  min-width: 280px;
+  max-width: 1440px;
+}
+
+.searchBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+
+  animation: 1000ms ease 0s 1 normal none running slideUp;
+}
