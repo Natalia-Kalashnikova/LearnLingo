@@ -6,8 +6,8 @@
 }
 
 .title {
-  text-align: center;
   padding: 30px;
+  text-align: center;
 }
 
 .cardsList {
@@ -23,16 +23,18 @@
 
 .cardsItem {
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
   align-items: start;
   justify-content: center;
   max-width: 1184px;
   width: 100%;
-  border-radius: 24px;
   padding: 24px;
   gap: 48px;
+
   background-color: var(--background-color);
+  border-radius: 24px;
 }
 
 .errorText {

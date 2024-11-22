@@ -3,10 +3,9 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   width: 100%;
   min-width: 280px;
-  /* max-width: 568px; */
+  padding: 20px;
   row-gap: 15px;
 }
 
@@ -20,8 +19,8 @@
 .headerSignup {
   flex-basis: 33.3333%;
   display: flex;
-  gap: 16px;
   justify-content: end;
+  gap: 16px;
 }
 
 .headerLink {
@@ -40,20 +39,23 @@
 .headerBtnIcon {
   width: 20px;
   height: 20px;
-  stroke: var(--accent-color);
   fill: transparent;
   margin-right: 8px;
+
+  stroke: var(--accent-color);
 }
 
 .headerBtn {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
   display: flex;
   align-items: center;
+  min-width: 93px;
+  padding: 0;
+
   font-weight: 700;
   line-height: 1.25;
-  min-width: 93px;
+
+  background-color: transparent;
+  border: 0;
 }
 
 .headerBtn:hover,
@@ -62,30 +64,36 @@
 }
 
 .headerBtnIcon {
+  margin-right: 8px;
+
   stroke: var(--accent-color);
   fill: transparent;
-  margin-right: 8px;
 }
 
 .headerBtnReg {
+  min-width: 175px;
   padding: 14px 39px;
-  border-radius: 12px;
-  background-color: var(--primary-text-color);
-  color: var(--background-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
-  min-width: 175px;
   text-align: center;
+
+  background-color: var(--primary-text-color);
+  color: var(--background-color);
+  border-radius: 12px;
 }
 
 .burgerButton {
+  display: none;
+
+  font-size: 1.5rem;
+
+  color: var(--primary-text-color);
   background: none;
   border: none;
-  font-size: 1.5rem;
+
   cursor: pointer;
-  display: none;
-  color: var(--primary-text-color);
 }
 
 .burgerButton svg {
@@ -101,6 +109,7 @@
     display: block;
   }
 }
+
 @media (min-width: 1200px) {
   .header {
     max-width: 80%;

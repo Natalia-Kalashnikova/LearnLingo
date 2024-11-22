@@ -11,29 +11,33 @@
 
 .cardsItem {
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
   align-items: start;
   justify-content: center;
   max-width: 1184px;
   width: 100%;
-  border-radius: 24px;
-  padding: 24px;
   gap: 48px;
+  padding: 24px;
+
   background-color: var(--background-color);
+  border-radius: 24px;
 }
 
 .cardsLoadMoreBtn {
+  display: block;
+  margin: auto;
   padding: 16px 48px;
-  background-color: var(--accent-color);
-  border: 0;
-  border-radius: 12px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.55556;
+
   color: var(--primary-text-color);
-  display: block;
-  margin: auto;
+  background-color: var(--accent-color);
+  border: 0;
+  border-radius: 12px;
 }
 
 .cardsLoadMoreBtn:hover,
@@ -44,6 +48,5 @@
 @media (min-width: 600px) {
   .cardsItem {
     flex-wrap: nowrap;
-    /* justify-content: center; */
   }
 }

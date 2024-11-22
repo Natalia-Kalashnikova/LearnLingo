@@ -1,6 +1,6 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
-import { getAuth } from "firebase/auth";
+import { getAuth } from 'firebase/auth';
 
 const {
   VITE_API_KEY,
@@ -19,7 +19,7 @@ const firebaseConfig = {
   projectId: VITE_PROJECT_ID,
   storageBucket: VITE_STORAGE_BUCKET,
   messagingSenderId: VITE_APP_ID,
-  appId: VITE_MESSAGING_SENDER_ID
+  appId: VITE_MESSAGING_SENDER_ID,
 };
 
 export const app = initializeApp(firebaseConfig);

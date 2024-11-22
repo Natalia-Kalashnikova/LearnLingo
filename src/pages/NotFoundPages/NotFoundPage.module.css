@@ -1,0 +1,26 @@
+.notFoundPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+
+  color: (--color-main, #101828);
+  text-align: center;
+}
+
+.text {
+  margin: 0;
+
+  font-size: 1.5rem;
+}
+
+.link {
+  color: var(--color-button, #e44848);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-button-hover, #d84343);
+  text-decoration: none;
+}

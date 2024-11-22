@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { getAuth, signInWithPopup } from "firebase/auth";
 import { app, googleAuthProvider } from "../../services/firebase.js";
