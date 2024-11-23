@@ -1,9 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/LearnLingo/(.*)",
-      "destination": "/$1"
-    }
-  ]
-}
-
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  }

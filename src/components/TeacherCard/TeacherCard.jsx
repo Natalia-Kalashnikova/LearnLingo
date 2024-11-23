@@ -18,7 +18,7 @@ import BookTrialForm from '../../components/Forms/BookTrialForm.jsx';
 import IconHeart from '../../images/icon/heart.svg';
 import IconActiveHeart from '../../images/icon/active-heart.svg';
 import IconBook from '../../images/icon/book-open.svg';
-import IconStar from 'images/icon/star.svg';
+import IconStar from '../../images/icon/star.svg';
 import css from './TeacherCard.module.css';
 
 const TeacherCard = ({ card, selectedLevel }) => {
