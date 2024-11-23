@@ -1,7 +1,6 @@
 import { lazy } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout.jsx';
-import NotFoundPage from '../../pages/NotFoundPages/NotFoundPage.jsx';
 import { useAuth } from '../../hooks/auth.js';
 
 const HomePage = lazy(() => import('../../pages/HomePage/HomePage.jsx'));
@@ -30,7 +29,7 @@ function App() {
         ) : (
           <Route path="/home" element={<Navigate redirectTo="/home" />} />
         )}
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<HomePage />} />
       </Route>
     </Routes>
   );
