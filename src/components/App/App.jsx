@@ -29,7 +29,7 @@ function App() {
         ) : (
           <Route path="/home" element={<Navigate redirectTo="/home" />} />
         )}
-        <Route path="*" element={<HomePage />} />
+        <Route path="*" element={<Navigate to="/home" />} />
       </Route>
     </Routes>
   );
