@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import IconLogin from '../../images/icon/log-in.svg';
+import IconLogin from '../../images/icon/log-in-01.svg';
 import IconLogout from '../../images/icon/log-out.svg';
 import css from './BurgerMenu.module.css';
 
@@ -74,7 +74,7 @@ const BurgerMenu = ({
                 setShowLoginPopup(true);
                 onClose();
               }}>
-              <img src={IconLogin} alt="Icon Login" />
+              <img className={css.burgerBtnIcon} src={IconLogin} alt="Icon Login" />
               Log in
             </button>
             <button
