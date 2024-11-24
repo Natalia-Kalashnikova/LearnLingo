@@ -9,12 +9,12 @@ import '../src/services/firebase.js';
 import { ToastContainer } from 'react-toastify';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <BrowserRouter >
-          <App />
-        </BrowserRouter>
-      </PersistGate>
-      <ToastContainer />
-    </Provider>
+  <Provider store={store}>
+    <PersistGate persistor={persistor}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </PersistGate>
+    <ToastContainer />
+  </Provider>
 );

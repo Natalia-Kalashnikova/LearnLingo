@@ -30,8 +30,9 @@ main {
 
   font-weight: 500;
   font-size: calc(30px + (48 - 30) * ((100vw - 320px) / (768 - 320)));
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: -0.02em;
+  text-align: left;
 }
 
 .heroAccent {
@@ -43,23 +44,24 @@ main {
 
 .heroText {
   max-width: 471px;
-  margin: 0 auto;
   margin-bottom: calc(40px + (64 - 40) * ((100vw - 320px) / (768 - 320)));
 
   font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)));
-  line-height: 1.375;
+  line-height: 1.38;
   letter-spacing: -0.02em;
+  text-align: start;
 }
 
 .heroLink {
-  min-width: 268px;
+  max-width: 268px;
   padding: 20px 88px;
   margin-bottom: 64px;
+  display: block;
 
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.55556;
+  line-height: 1.56;
   white-space: nowrap;
 
   background-color: var(--accent-color);
@@ -85,13 +87,20 @@ main {
   padding: 40px 25px;
 
   border-radius: 30px;
-  border: 1.5px dashed var(--accent-color);
+  border: 2px dashed var(--accent-color);
+}
+
+.heroItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 217px;
 }
 
 .heroTotal {
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.14286;
+  line-height: 1.14;
   letter-spacing: -0.02em;
 }
 
@@ -99,7 +108,7 @@ main {
   max-width: 80px;
 
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 
   color: rgba(18, 20, 23, 0.7);
@@ -117,7 +126,6 @@ main {
   }
 
   .heroText {
-    margin: 0 auto;
     margin-bottom: 64px;
 
     font-size: 16px;
@@ -140,7 +148,7 @@ main {
 
     font-weight: 500;
     font-size: 48px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: -0.02em;
   }
 }
@@ -186,7 +194,7 @@ main {
 
     font-weight: 500;
     font-size: 48px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: -0.02em;
   }
 
@@ -194,7 +202,7 @@ main {
     max-width: 471px;
     margin-bottom: 64px;
 
-    line-height: 1.375;
+    line-height: 1.38;
     letter-spacing: -0.02em;
   }
 }

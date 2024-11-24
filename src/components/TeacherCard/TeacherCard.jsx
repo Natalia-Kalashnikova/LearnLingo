@@ -95,19 +95,28 @@ const TeacherCard = ({ card, selectedLevel }) => {
                 <span className={css.teachersInfoPrice}>{price_per_hour}$</span>
               </li>
             </ul>
-            {inFavorites ? (
+            {isAuth && inFavorites ? (
               <button
                 className={css.teachersFavoriteBtn}
                 type="button"
                 onClick={handleDeleteFromFavorites}>
                 <img src={IconActiveHeart} alt="icon Active Heart" />
               </button>
-            ) : (
+            ) : isAuth ? (
               <button
                 className={css.teachersFavoriteBtn}
                 type="button"
                 onClick={handleAddToFavorite}>
-                <img src={IconHeart} alt="" />
+                <img src={IconHeart} alt="icon Heart" />
+              </button>
+            ) : (
+              <button
+                className={css.teachersFavoriteBtn}
+                type="button"
+                onClick={() =>
+                  showWarningToast('Sorry, only for registered users')
+                }>
+                <img src={IconHeart} alt="icon Heart" />
               </button>
             )}
           </div>

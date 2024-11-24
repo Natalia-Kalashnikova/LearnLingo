@@ -17,7 +17,7 @@
 }
 
 .headerSignup {
-  flex-basis: 33.3333%;
+  flex-basis: 33.33%;
   display: flex;
   justify-content: end;
   gap: 16px;

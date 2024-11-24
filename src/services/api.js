@@ -24,7 +24,7 @@ export async function getTeachersByLanguage(language) {
     const snapshot = await get(child(dbRef, 'teachers'));
     const teachers = snapshot.val();
     const filteredTeachers = Object.values(teachers).filter(teacher =>
-      teacher.language.includes(language)
+      teacher.languages.includes(language)
     );
     return filteredTeachers;
   } catch (error) {
@@ -46,7 +46,7 @@ export async function getTeachersByLvl(lvl) {
   }
 }
 
-export async function filteredTeachersByLvl(price) {
+export async function getTeachersByPrice(price) {
   try {
     const dbRef = ref(getDatabase());
     const snapshot = await get(child(dbRef, 'teachers'));
